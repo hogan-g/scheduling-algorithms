@@ -8,5 +8,7 @@ class Task(object):
         self.timeleft = burst
         self.arrivaltime = None
 
+        self.complete = False
+
     def __str__(self):
         return f'Task: {self.name}, Priority: {self.priority}, Burst: {self.burst}'

@@ -13,7 +13,8 @@ schedulefile = checkforfile()
 
 readandadd(schedulefile, tasklist) #reads file and adds all task to list
 
-schedule = sorted(tasklist, key=lambda x: x.burst) # list where tasks will be ordered in the way they need to be, for FCFS it is the same
+# list where tasks will be ordered in the way they need to be, for SJF it is the sorted by the task burst length
+schedule = sorted(tasklist, key=lambda x: x.burst) 
 
 for task in schedule:
     cputime = run(task, cputime)

@@ -7,13 +7,14 @@ def run(task, cputime, timeslice=None):
         task.arrivaltime = cputime
         task.totaltime = cputime
 
-    task.totaltime += timeslice
+    cputime += timeslice
 
     if timeslice >= task.timeleft: #if process will be completed in this burst
+        task.complete = True
         print(f'Running Task: {task.name}, {task.priority}, {task.burst} for {timeslice} units.')
-        print(f'Process {task.name} arrived at time {task.arrivaltime} and ran for {task.burst} MS. it had a turn-around time of {task.totaltime}')
+        print(f'Process {task.name} loaded onto CPU first at time {task.arrivaltime} and ran for {task.burst} MS total, it had a turn-around time of {cputime}')
     else:
+        task.timeleft -= timeslice
         print(f'Running Task: {task.name}, {task.priority}, {task.burst} for {timeslice} units. Task has {task.timeleft}MS remaining.')
     
-    cputime += timeslice
     return cputime

@@ -13,7 +13,8 @@ schedulefile = checkforfile()
 
 readandadd(schedulefile, tasklist) #reads file and adds all task to list
 
-schedule = tasklist # list where tasks will be ordered in the way they need to be, for FCFS it is the same
+# list where tasks will be ordered in the way they need to be, for FCFS it is the same
+schedule = tasklist 
 
 for task in schedule:
     cputime = run(task, cputime)
