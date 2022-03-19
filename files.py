@@ -1,3 +1,7 @@
+# Made by Gareth Hogan
+# Student Num: 20379616
+# I have read and acknowledge the DCU Academic Integrity and Plagiarism Policy.
+
 import sys
 from functions import *
 from errorhandler import *

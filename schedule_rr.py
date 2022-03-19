@@ -3,6 +3,10 @@ from files import *
 from functions import *
 from task import *
 from errorhandler import *
+# Made by Gareth Hogan
+# Student Num: 20379616
+# I have read and acknowledge the DCU Academic Integrity and Plagiarism Policy.
+
 from CPU import *
 
 time_quantum = 10
@@ -31,4 +35,4 @@ while schedule:
         schedule.append(removed_task)
 
 avg = total_turnaround/num_of_tasks
-printavg(avg, "Priority")
+printavg(avg, "Round Robin ")

@@ -1,3 +1,7 @@
+# Made by Gareth Hogan
+# Student Num: 20379616
+# I have read and acknowledge the DCU Academic Integrity and Plagiarism Policy.
+
 class Task(object):
     def __init__(self, name, priority, burst):
         self.name = name

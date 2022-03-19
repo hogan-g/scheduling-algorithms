@@ -1,3 +1,7 @@
+# Made by Gareth Hogan
+# Student Num: 20379616
+# I have read and acknowledge the DCU Academic Integrity and Plagiarism Policy.
+
 from task import *
 
 def run(task, cputime, timeslice=None):
