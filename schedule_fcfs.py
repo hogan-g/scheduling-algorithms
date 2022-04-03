@@ -21,7 +21,7 @@ readandadd(schedulefile, tasklist) #reads file and adds all task to list
 # list where tasks will be ordered in the way they need to be, for FCFS it is the same
 schedule = tasklist 
 
-total_turnaround = runschedule(schedule, cputime)
+total_turnaround = runschedule(schedule, cputime) # run the scheduled tasks with the function, it returns the total turnaround time
 
-avg = total_turnaround/len(schedule)
-printavg( avg , "FCFS")
+avg = total_turnaround/len(schedule) 
+printavg( avg , "FCFS") # sends avg to print function, with label FCFS

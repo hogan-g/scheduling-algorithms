@@ -21,7 +21,7 @@ readandadd(schedulefile, tasklist) #reads file and adds all task to list
 # list where tasks will be ordered in the way they need to be, for SJF it is the sorted by the task burst length
 schedule = sorted(tasklist, key=lambda x: x.burst) 
 
-total_turnaround = runschedule(schedule, cputime)
+total_turnaround = runschedule(schedule, cputime) # run the scheduled tasks with the function, it returns the total turnaround time
 
 avg = total_turnaround/len(schedule)
-printavg(avg , "SJF")
+printavg(avg , "SJF") # sends avg to print function, with label SJF

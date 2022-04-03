@@ -5,20 +5,20 @@
 import sys
 from CPU import *
 
-def add(list, task):
+def add(list, task): # adds task to given list
     list.append(task)
-    return list
+    return list # return updated list
 
-def printavg(avg, algorithm):
+def printavg(avg, algorithm): # fancy formatting for printing average
     print('-------------------------------------------------------------------')
     print(f'Average turnaround time for {algorithm} scheduling is {avg:.2f} MS')
     print('-------------------------------------------------------------------')
 
-def runschedule(schedule, cputime):
+def runschedule(schedule, cputime): # runschedule runs the whole list of task objects, used for FCFS, SJF and Priority
     total_turnaround = 0
 
-    for task in schedule:
-        cputime = run(task, cputime)
-        total_turnaround += task.totaltime
+    for task in schedule: # for every task
+        cputime = run(task, cputime) # run and then return cputime when finished
+        total_turnaround += task.totaltime # add tasks total time to turnaround
 
     return total_turnaround

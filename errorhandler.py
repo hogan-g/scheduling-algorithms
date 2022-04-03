@@ -4,11 +4,11 @@
 
 import sys
 
-def error(message):
+def error(message): # general error message to stop program gracefully
     print(f'Error Caught. Terminating Program\nError : {message}')
     sys.exit()
 
-def checkforfile():
+def checkforfile(): # function to check if the file given to program actually exists
     try:
         schedulefile = sys.argv[1]
         return schedulefile

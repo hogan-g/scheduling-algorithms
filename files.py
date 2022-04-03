@@ -7,7 +7,7 @@ from functions import *
 from errorhandler import *
 from task import *
 
-def readandadd(file, list):
+def readandadd(file, list): # function to read schedule file and add the tasks to the a list
     try:
         with open(file) as f:
             for line in f:
