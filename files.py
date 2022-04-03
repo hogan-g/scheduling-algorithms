@@ -15,6 +15,9 @@ def readandadd(file, list): # function to read schedule file and add the tasks t
 
                 #setup task structure
                 name = line[0]
+                if len(line) != 3:                    
+                    print(f"Task {name} has more than more or less than 3 inputs in line, skipping this line\n")
+                    continue
                 try:
                     priority = int(line[1])
                     burst = int(line[2])
