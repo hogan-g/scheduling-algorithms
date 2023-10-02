@@ -1,8 +1,6 @@
-# CA216 CPU Scheduling
-# Made by Gareth Hogan
-# Student Num: 20379616
-# I have read and acknowledge the DCU Academic Integrity and Plagiarism Policy.
+# CPU Scheduling
+### Made by Gareth Hogan
 
-# Link to Video: https://youtu.be/ay-KQNd-5tU
-# Link to Gitlab: https://gitlab.computing.dcu.ie/hogang22/2022-CA216-scheduling
+This project was done for a module where we were learning about Operating Systems, the CPU and how it schedules processes, in it I simulated several popular scheduling methods on a fake CPU built using object-oriented code, I was then able to compare the results, below is a link to the video presentation of my results
 
+### Link to Video: https://youtu.be/ay-KQNd-5tU
